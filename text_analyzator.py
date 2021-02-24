@@ -30,10 +30,10 @@ other freshwater genera and herring similar to those
 in modern oceans. Other fish such as paddlefish, 
 garpike and stingray are also present.'''
 ]
-texts1 = [(TEXTS[0].strip(",.-").split()), (TEXTS[1].strip(",.-").split()), (TEXTS[2].strip(",.-").split())]
-
-texts1[1] = texts1[1]
-texts1[2] = texts1[2]
+TEXTS[0] = TEXTS[0].replace(',', '').replace('.', '').replace("-","")
+TEXTS[1] = TEXTS[1].replace(',', '').replace('.', '').replace("-","")
+TEXTS[2] = TEXTS[2].replace(',', '').replace('.', '').replace("-","")
+texts1 = [TEXTS[0].split(), TEXTS[1].split(), TEXTS[2].split()]
 words = 0
 title_case = 0
 upper_case = 0
