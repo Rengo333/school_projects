@@ -16,7 +16,7 @@ def main():
         guesses += 1
         if players_num == sec_num:
             print("Correct, you've guessed the right number\n in", guesses, "guesses!")
-            game = False
+            break
         if not num_check(players_num) == players_num:
             continue
         else:
