@@ -55,7 +55,7 @@ def bulls_cows(players_num, sec_num):
     cow = ", cow: "
     bulls = 0
     cows = 0
-    if len(players_num) == 4 and players_num[0] != 0:
+    if len(players_num) == 4 and players_num[0] != "0":
         for enum, i in enumerate(sec_num):
             if players_num[enum] == sec_num[enum]:
                 bulls += 1
