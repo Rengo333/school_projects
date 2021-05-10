@@ -32,8 +32,8 @@ def unique_num():
             continue
         else:
             sec_num.append(i)
-        if sec_num == "0":
-            sec_num = random.choice(nums)
+        if sec_num[0] == "0":
+            sec_num[0] = random.choice(nums)
         if len(sec_num) == 4:
             sec_num = "".join(sec_num)
             break
@@ -45,6 +45,8 @@ def num_check(players_num):
         return print("First character cant be 0.")
     elif not len(players_num) == 4:
         return print("Number have to be atleast 4 characters long.")
+    elif not players_num.isdecimal():
+        return print("All characters must be numbers!")
     else:
         return players_num
 
