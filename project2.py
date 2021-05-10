@@ -7,10 +7,9 @@ def main():
     print(splitter)
     print("I've generated a random 4 digit number for you.\nLet's play a bulls and cows game.")
     print(splitter)
-    game = True
     sec_num = unique_num()
     guesses = 0
-    while game:
+    while True:
         players_num = input("Enter a number: ")
         print(splitter)
         guesses += 1
