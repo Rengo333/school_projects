@@ -48,7 +48,7 @@ user_name = str(input("username: "))
 user_pass = str(input("password: "))
 if users["USERS"].get(user_name) == user_pass:
     print(oddelovac)
-    print("Welcome to the app, bob ")
+    print("Welcome to the app, ",user_name)
     print("We have 3 texts to be analyzed.")
     print(oddelovac)
     users_choice = (int(input("Enter a number btw. 1 and 3 to select: "))-1)
