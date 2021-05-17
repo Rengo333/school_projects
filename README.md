@@ -1,2 +1,2 @@
-# school_projects
-projects for my school 
+# projects
+projects made by me
